@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   
   s.required_ruby_version = '>= 2.3.0'
   
-  s.add_dependency 'nodo', '>= 1.5.6'
+  s.add_dependency 'nodo', '>= 1.6.0'
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'rake'

@@ -1,7 +1,6 @@
-require 'digest/md5'
-
 class Jass::React::JSX::Compiler < Nodo::Core
-  require babelCore: '@babel/core', pluginTransformReactJSX: '@babel/plugin-transform-react-jsx'
+  require babelCore: '@babel/core', 
+          pluginTransformReactJSX: '@babel/plugin-transform-react-jsx'
 
   class_function def compile(source, filename)
     filename = File.basename(filename)
