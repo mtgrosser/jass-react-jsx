@@ -11,7 +11,7 @@ class Jass::React::JSX::Compiler < Nodo::Core
   function :compile_component, <<~'JS'
     (source, filename) => {
       let code = '';
-      nodo.log(`Compiling component ${filename}`);
+      nodo.debug(`Compiling component ${filename}`);
       
       const result = babelCore.transformSync(source,
         { plugins: [
