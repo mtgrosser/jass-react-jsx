@@ -42,7 +42,7 @@ $ yarn add @babel/core @babel/plugin-transform-react-jsx
 
 ## Usage
 
-Place your `.jsx` components inside your regular asset path, e.g. under `app/assets/javascripts` or `app/javascript`.
+Place your `.jsx` components inside your regular `app/javascript` path.
 
 In `app/javascript/components/HelloWorld.jsx`:
 
