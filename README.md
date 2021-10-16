@@ -77,14 +77,14 @@ pin "react", to: "https://cdn.esm.sh/v45/react@17.0.2/es2021/react.js"
 pin "react-dom", to: "https://cdn.esm.sh/v45/react-dom@17.0.2/es2021/react-dom.js"
 pin "react/jsx-runtime", to: "https://cdn.esm.sh/v45/react@17.0.2/es2021/jsx-runtime.js"
 
-pin "components/HelloWorld"
+pin "components/HelloWorld.jsx", to: "components/HelloWorld.js"
 ```
 
 Then just use them in your JS code:
 
 ```js
 import { render } from "react-dom";
-import HelloWorld from "components/HelloWorld";
+import HelloWorld from "components/HelloWorld.jsx";
 ```
 
 ## Limitations
