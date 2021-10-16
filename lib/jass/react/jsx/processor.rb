@@ -4,13 +4,13 @@ module Jass::React::JSX::Processor
   class << self
     
     def cache_key
-      @cache_key ||= "#{name}:#{VERSION}".freeze
+      @cache_key ||= [name, VERSION].freeze
     end
     
     def call(input)
       data = input[:data]
 
-      js, map = input[:cache].fetch([self.cache_key, data]) do
+      js, map = input[:cache].fetch(cache_key + [input[:filename]] + [data]) do
         result = Jass::React::JSX::Compiler.compile(data, input[:filename])
         result.values_at('code', 'map')
       end
