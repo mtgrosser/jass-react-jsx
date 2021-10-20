@@ -67,3 +67,18 @@ render(
   document.getElementById('root')
 );
 ```
+
+Import the JSX modules in `app/javascript/application.js`:
+
+```js
+import "components";
+```
+
+## Load the importmap in your HTML
+
+In the `<head>` of `app/views/layouts/application.html.erb`:
+
+```erb
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+<%= javascript_importmap_tags %>
+```
