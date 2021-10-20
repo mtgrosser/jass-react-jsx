@@ -102,7 +102,7 @@ To use the modified version of `importmap-rails`, add it to your `Gemfile`:
 gem "importmap-rails", ">= 0.3.4", github: "mtgrosser/importmap-rails", branch: "main"
 ```
 
-There is a pull request (rails/importmap-rails#57) which will resolve this issue when accepted.
+There is a [pull request](https://github.com/rails/importmap-rails/pull/57) which will resolve this issue when accepted.
 
 Also, the following things are not (yet) supported:
 
