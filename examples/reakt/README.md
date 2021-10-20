@@ -22,6 +22,12 @@ Enable JSX support for import maps by adding the following line inside the confi
 config.importmap.accept = %w[js jsx]
 ```
 
+Make sure that `app/javascript` is linked by `app/assets/config/manifest.js`:
+
+```js
+//= link_tree ../../javascript .js
+```
+
 ## Define the import map
 
 ```ruby
