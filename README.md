@@ -87,8 +87,23 @@ import { render } from "react-dom";
 import HelloWorld from "components/HelloWorld.jsx";
 ```
 
-## Limitations
+## Example Rails app
 
-Currently, the following things are not (yet) supported:
+For an example Rails application check out the [example/reakt](https://github.com/mtgrosser/jass-react-jsx/tree/master/examples/reakt) folder in this repo.
+
+## ⚠️ Limitations
+
+As of v0.8.1, the `rails-importmap` gem doesn't support globbing and reloading of JS modules with a file
+extension other than `.js`, therefore a modified version is provided at [mtgrosser/importmap-rails](https://github.com/mtgrosser/importmap-rails).
+
+To use the modified version of `importmap-rails`, add it to your `Gemfile`:
+
+```ruby
+gem "importmap-rails", ">= 0.3.4", github: "mtgrosser/importmap-rails", branch: "main"
+```
+
+There is a [pull request](https://github.com/rails/importmap-rails/pull/57) which will resolve this issue when accepted.
+
+Also, the following things are not (yet) supported:
 
 - source maps
