@@ -91,8 +91,13 @@ import HelloWorld from "components/HelloWorld.jsx";
 
 For an example Rails application check out the [example/reakt](https://github.com/mtgrosser/jass-react-jsx/tree/master/examples/reakt) folder in this repo.
 
-## Limitations
+## ⚠️ Limitations
 
-Currently, the following things are not (yet) supported:
+As of v0.8.1, the `rails-importmap` gem doesn't support globbing and reloading of JS modules with a file
+extension other than `.js`, therefore a modified version is provided at [mtgrosser/importmap-rails](https://github.com/mtgrosser/importmap-rails).
+
+There is a pull request (rails/importmap-rails#57) which will resolve this issue.
+
+Also, the following things are not (yet) supported:
 
 - source maps
