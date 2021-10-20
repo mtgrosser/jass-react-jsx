@@ -15,12 +15,10 @@ Install the JS dependencies:
 $ yarn add @babel/core @babel/plugin-transform-react-jsx
 ```
 
-Enable JSX support for import maps:
+Enable JSX support for import maps by adding the following line inside the config block of
+`config/application.rb`:
 
 ```ruby
-# add the following line inside the config block of
-# config/application.rb
-
 config.importmap.accept = %w[js jsx]
 ```
 
