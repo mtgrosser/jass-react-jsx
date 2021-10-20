@@ -87,6 +87,10 @@ import { render } from "react-dom";
 import HelloWorld from "components/HelloWorld.jsx";
 ```
 
+## Example Rails app
+
+For an example Rails application check out the [example/reakt](https://github.com/mtgrosser/jass-react-jsx/tree/master/examples/reakt) folder in this repo.
+
 ## Limitations
 
 Currently, the following things are not (yet) supported:
