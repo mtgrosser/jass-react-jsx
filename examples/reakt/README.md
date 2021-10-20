@@ -1,4 +1,4 @@
-# Example Rails application with JSX with Import Maps
+# Example Rails application with JSX & Import Maps
 
 ## Setup
 
